@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Login</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/master.css" media="screen">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
+    <!-- Javascript -->
+    <script src="../js/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="../js/primary.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="modal fade" id="reset-password" tabindex="-1" role="dialog" aria-labelledby="reset-password" style="display: none;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="reset-password">Forgot Password?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center">To reset you password please enter your email</p>
+                        <input type="email" class="form-control" id="reset-email" placeholder="Email">
+                    </div>
+                    <div class="alert alert-danger invalid-reset-email" role="alert" hidden>Please enter a valid email!</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger reset-button">Reset Password</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="well login-well">
+            <h3 class="login-well-title">Login</h3>
+            <hr class="login-well-rule">
+            <div class="login-well-input-controls">
+                <div class="form-group">
+                    <label for="email-input">Email address</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Email">
+                </div>
+                <div class="alert alert-danger invalid-email" role="alert" hidden>Please enter a valid email!</div>
+                <div class="form-group">
+                    <label for="password-input">Password</label>
+                    <input type="password" class="form-control" id="password-input" placeholder="Password">
+                </div>
+                <div class="alert alert-danger invalid-password" role="alert" hidden>Please enter a password that contains at least 8 characters, 1 number, 1 upper and 1 lowercase letter.</div>
+                <button type="button" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-success signup-button">Sign Up</button>
+                <br>
+                <button type="button" class="btn btn-link reset-password-button" data-toggle="modal" data-tooltip="true" data-placement="bottom" data-target="#reset-password" title="Reset Password">
+                  Forgot Password?
+                </button>
+                <button type="button" class="btn btn-link back-home-button">
+                  <a href="javascript:(window.history.back())">Back to Home Page</a>
+                </button>
+            </div>
+        </div>
+        <h3 class="text-center">OR</h3>
+        <div class="well login-methods-well">
+            <h3 class="login-well-title">Other Methods</h3>
+            <hr class="login-well-rule">
+            <div class="sign-in-methods">
+                <button type="button" class="btn btn-default btn-lg btn-block sign-in-method">Sign In with Google
+                  <span class="badge google-badge">
+                    <img src="../images/google_logo.png" alt="google" />
+                </span>
+              </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

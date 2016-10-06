@@ -1,0 +1,146 @@
+.container-fluid {
+    padding: 0px !important;
+}
+
+
+/* Header Section */
+
+.top-header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    height: 50px;
+    padding: 0px;
+    position: relative;
+    background-color: #f34b16;
+}
+
+.header-menu-icon {
+    z-index: 5;
+    font-size: 44px;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.header-title {
+    top: 8px;
+    left: 60px;
+    z-index: 2;
+    margin: 0px;
+    user-select: none;
+    position: absolute;
+}
+
+
+/* Menu Section */
+
+.menu {
+    top: 50px;
+    left: -400px;
+    z-index: 4;
+    bottom: 0px;
+    width: 400px;
+    position: absolute;
+    background-color: #b7360d;
+}
+
+.menu-normal {
+    top: 50px;
+    left: -400px;
+    z-index: 4;
+    bottom: 0px;
+    width: 400px;
+    position: absolute;
+    background-color: #b7360d;
+}
+
+.menu-mobile {
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    z-index: 4;
+    bottom: 0px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #b7360d;
+}
+
+.menu-login-section {
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    padding-bottom: 14px;
+}
+
+.menu-login-button {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+
+/*
+  Login Page
+*/
+
+.login-well {
+    width: 400px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-well-title {
+    margin: 0px;
+    text-align: center;
+}
+
+.login-well-rule {
+    margin: 0px;
+    margin-top: 5px;
+    border-color: rgba(0, 0, 0, 0.48)
+}
+
+.login-well-input-controls {
+    margin-top: 20px;
+}
+
+.signup-button {
+    float: right;
+}
+
+.reset-password-button {
+    padding-left: 0px !important;
+}
+
+.back-home-button {
+    float: right;
+    padding-right: 0px !important;
+}
+
+.login-methods-well {
+    width: 500px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sign-in-methods {
+    padding-top: 10px;
+}
+
+.google-badge {
+    margin-left: 14px;
+}
+
+.sign-in-method {
+    font-size: 20px !important;
+}
+
+.reset-button {
+    width: 100%;
+}
