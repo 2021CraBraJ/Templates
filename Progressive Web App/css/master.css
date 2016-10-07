@@ -2,6 +2,10 @@
     padding: 0px !important;
 }
 
+.btn {
+    border-radius: 0px !important;
+}
+
 
 /* Header Section */
 
@@ -13,7 +17,8 @@
     height: 50px;
     padding: 0px;
     position: relative;
-    background-color: #f34b16;
+    background-color: #607D8B;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .header-menu-icon {
@@ -22,6 +27,7 @@
     cursor: pointer;
     padding-top: 3px;
     padding-left: 5px;
+    text-shadow: 0px 0px 7.5px black;
 }
 
 .header-title {
@@ -43,55 +49,49 @@
     bottom: 0px;
     width: 400px;
     position: absolute;
-    background-color: #b7360d;
-}
-
-.menu-normal {
-    top: 50px;
-    left: -400px;
-    z-index: 4;
-    bottom: 0px;
-    width: 400px;
-    position: absolute;
-    background-color: #b7360d;
-}
-
-.menu-mobile {
-    top: 50px;
-    left: 0px;
-    right: 0px;
-    z-index: 4;
-    bottom: 0px;
-    width: 100%;
-    display: none;
-    position: absolute;
-    background-color: #b7360d;
+    background-color: #78909C;
+    box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .menu-login-section {
     width: 100%;
     bottom: 0px;
+    padding-top: 20px;
     position: absolute;
     padding-bottom: 14px;
+    background-color: #546E7A;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.menu-login-section hr {
+    margin-top: 1px;
+}
+
+.menu-login-section a {
+    color: white;
+    background-color: #455A64;
+    border: #37474F solid 0.25px;
 }
 
 .menu-login-button {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
 /*
   Login Page
 */
-
+html,.container-fluid {
+  background-color: #B0BEC5;
+}
 .login-well {
     width: 400px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5) !important;
 }
 
 .login-well-title {
@@ -102,7 +102,7 @@
 .login-well-rule {
     margin: 0px;
     margin-top: 5px;
-    border-color: rgba(0, 0, 0, 0.48)
+    border-color: rgba(0, 0, 0, 0.5)
 }
 
 .login-well-input-controls {
@@ -127,6 +127,7 @@
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5) !important;
 }
 
 .sign-in-methods {
@@ -143,4 +144,7 @@
 
 .reset-button {
     width: 100%;
+}
+.or-h3 {
+    text-shadow: 1px 2px 3px #666;
 }

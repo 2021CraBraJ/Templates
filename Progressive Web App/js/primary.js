@@ -1,5 +1,6 @@
 $(function() {
     //Variables
+    $.support.transition = false
     var Application = Application || {};
     $("#email-input").on('input', function() {
         var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -27,21 +28,15 @@ $(function() {
     });
     $('[data-tooltip="true"]').tooltip();
     $(window).resize(function() {
-        if (window.screen.width <= 480) {
-            $("#menu").removeAttr("style");
-            $("#menu").removeClass("menu-normal");
-            $("#menu").removeClass("menu");
-            $("#menu").addClass("menu-mobile");
+        if (!(window.screen.width <= 480)) {
+            $("#menu").removeAttr("style")
         } else {
-            $("#menu").removeAttr("style");
-            $("#menu").removeClass("menu-mobile");
-            $("#menu").removeClass("menu");
-            $("#menu").addClass("menu-normal");
+            $("#menu").removeAttr("style")
         }
     });
     $(".header-menu-icon").click(function() {
         if (window.screen.width <= 480) {
-            $("#menu").slideToggle();
+            $("#menu").fadeToggle(200);
         } else {
             $("#menu").clearQueue();
             if ($("#menu").css("left") == "-400px" || !($("#menu").is(":visible"))) {
@@ -51,12 +46,12 @@ $(function() {
                     right: "auto",
                     width: 400,
                     display: "block"
-                }, "slow");
+                }, 200);
             } else {
                 $("#menu").animate({
                     left: "-400px",
                     opacity: 0.25
-                }, "slow");
+                }, 200);
             }
         }
     });
